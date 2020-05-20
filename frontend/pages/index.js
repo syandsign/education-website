@@ -61,13 +61,13 @@ export default function Home() {
             </ul>
           </div>
           {course.map(x => (
-            <div className="col-4 align-self-center">
+            <div className="col-4 align-self-center" key={x.id}>
               <div className="card border-0">
-                <img src={x.image} class="card-img-top" alt="..." />
+                <img src={x.image} className="card-img-top" alt="..." />
                 <div className="card-body p-0 pt-4">
                   <h5 className="card-title font-weight-bold">{x.title}</h5>
                   <p className="text-muted">{x.mentor}</p>
-                  <p class="card-text">{x.excerpt}</p>
+                  <p className="card-text">{x.excerpt}</p>
                   <small className="float-left text-muted">{x.participants} Participants&nbsp;&nbsp;&nbsp;{x.time} Hours</small>
                   <small className="float-right text-danger">{x.price}</small>
                 </div>
@@ -118,21 +118,21 @@ export default function Home() {
           </div>
           <div className="col align-self-center p-5">
             <form>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control" id="inputPassword4" placeholder="Name" />
+              <div className="form-row">
+                <div className="form-group col-md-6">
+                  <input type="text" className="form-control" id="inputPassword4" placeholder="Name" />
                 </div>
-                <div class="form-group col-md-6">
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email" />
+                <div className="form-group col-md-6">
+                  <input type="email" className="form-control" id="inputEmail4" placeholder="Email" />
                 </div>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="inputAddress" placeholder="Subject" />
+              <div className="form-group">
+                <input type="text" className="form-control" id="inputAddress" placeholder="Subject" />
               </div>
-              <div class="form-group">
-                <textarea rows="5" type="text" class="form-control" id="inputAddress2" placeholder="Message" />
+              <div className="form-group">
+                <textarea rows="5" type="text" className="form-control" id="inputAddress2" placeholder="Message" />
               </div>
-              <button type="submit" class="btn btn-danger">Send</button>
+              <button type="submit" className="btn btn-danger">Send</button>
             </form>
           </div>
         </div>
