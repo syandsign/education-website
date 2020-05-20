@@ -1,209 +1,189 @@
 import Head from 'next/head'
+import Layout from '../components/layout'
+import course from '../lib/data/course.json'
 
 export default function Home() {
   return (
-    <div className="container">
+    <Layout>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="/styles/main.css" />
+        <title>Syandsign Academy</title>
       </Head>
-
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/zeit/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <div className="container-fluid hero">
+        <div className="row h-100 text-white">
+          <div className="col align-self-center p-5">
+            <h1 className="display-4 font-weight-bold">Express yourself.<br />Show creativity.<br />Stay inspired.</h1>
+            <button className="btn btn-light">Read More</button>
+          </div>
         </div>
-      </main>
+      </div>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
+      <div className="container-fluid">
+        <div className="row h-100 p-5 my-3">
+          <div className="col align-self-center">
+            <h4 className="font-weight-bold">Fast support</h4>
+            <p>Lorem ipsum</p>
+          </div>
+          <div className="col align-self-center">
+            <h4 className="font-weight-bold">What we do</h4>
+            <p>Lorem ipsum</p>
+          </div>
+          <div className="col align-self-center">
+            <h4 className="font-weight-bold">What we are</h4>
+            <p>Lorem ipsum</p>
+          </div>
+          <div className="col align-self-center">
+            <h4 className="font-weight-bold">Contact us</h4>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+      </div>
 
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+      <div className="container-fluid tour">
+        <div className="row h-100">
+          <div className="col image">
+          </div>
+          <div className="col align-self-center text">
+            <h2 className="font-weight-bold">Take a tour</h2>
+            <p>Lorem ipsum asbfkjagfaksnca</p>
+          </div>
+        </div>
+      </div>
 
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+      <div className="container-fluid">
+        <div className="row h-100 p-5 my-3">
+          <div className="col-12">
+            <ul className="list-inline">
+              <li className="list-inline-item mr-4"><a href="#" className="font-weight-bold text-dark">Show all</a></li>
+              <li className="list-inline-item mr-4"><a href="#" className="font-weight-bold text-dark">Learning</a></li>
+              <li className="list-inline-item mr-4"><a href="#" className="font-weight-bold text-dark">Popular</a></li>
+              <li className="list-inline-item mr-4"><a href="#" className="font-weight-bold text-dark">Certificate</a></li>
+            </ul>
+          </div>
+          {course.map(x => (
+            <div className="col-4 align-self-center">
+              <div className="card border-0">
+                <img src={x.image} class="card-img-top" alt="..." />
+                <div className="card-body p-0 pt-4">
+                  <h5 className="card-title font-weight-bold">{x.title}</h5>
+                  <p className="text-muted">{x.mentor}</p>
+                  <p class="card-text">{x.excerpt}</p>
+                  <small className="float-left text-muted">{x.participants} Participants&nbsp;&nbsp;&nbsp;{x.time} Hours</small>
+                  <small className="float-right text-danger">{x.price}</small>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
 
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+      <div className="container-fluid banner">
+        <div className="row h-100">
+          <div className="col p-5 bg-danger text-white">
+            <h2 className="font-weight-bold">E-Books</h2>
+            <p>Lorem ipsum asbfkjagfaksnca</p>
+            <a href="#" className="text-white">Learn more</a>
+          </div>
+          <div className="col p-5 bg-dark text-white">
+            <h2 className="font-weight-bold">Creative approach</h2>
+            <p>Lorem ipsum asbfkjagfaksnca</p>
+            <a href="#" className="text-white">Learn more</a>
+          </div>
+          <div className="col image">
+          </div>
+        </div>
+      </div>
+      <br /><br /><br /><br />
+      <div className="container-fluid banner2">
+        <div className="row h-100">
+          <div className="col-4 image">
+          </div>
+          <div className="col p-5 bg-danger text-white">
+            <h2 className="font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            <p>Someone on the internet</p>
+          </div>
+        </div>
+      </div>
 
-        footer img {
-          margin-left: 0.5rem;
-        }
+      <div className="container-fluid contact">
+        <div className="row h-100">
+          <div className="col align-self-center p-5">
+            <h2 className="font-weight-bold">Contact us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat erat, mattis a pellentesque id, fringilla vitae metus. Proin bibendum sodales congue.</p>
+            <ul className="list-unstyled">
+              <li>Location</li>
+              <li>Phone number</li>
+              <li>Hours</li>
+            </ul>
+          </div>
+          <div className="col align-self-center p-5">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="inputPassword4" placeholder="Name" />
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="inputAddress" placeholder="Subject" />
+              </div>
+              <div class="form-group">
+                <textarea rows="5" type="text" class="form-control" id="inputAddress2" placeholder="Message" />
+              </div>
+              <button type="submit" class="btn btn-danger">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
 
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+      <div className="container-fluid">
+        <div className="row bg-dark p-5 line">
+          <div className="col">
+            <ul className="list-unstyled">
+              <li>
+                <a href="#" className="text-white">Home</a>
+              </li>
+              <li>
+                <a href="#" className="text-white">About</a>
+              </li>
+              <li>
+                <a href="#" className="text-white">Newsroom</a>
+              </li>
+              <li>
+                <a href="#" className="text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div className="col">
+            <ul className="list-unstyled">
+              <li>
+                <a href="#" className="text-white">Instagram</a>
+              </li>
+              <li>
+                <a href="#" className="text-white">Facebook</a>
+              </li>
+              <li>
+                <a href="#" className="text-white">Dribbble</a>
+              </li>
+            </ul>
+          </div>
+          <div className="col">
+            <ul className="list-unstyled">
+              <li>
+                <small className="text-muted">Business:</small><br />
+                <a href="#" className="text-white">contact.syandana@gmail.com</a><br />
+                <a href="#" className="text-white">+62</a><br />
+              </li>
+              <br />
+              <li>
+                <small className="text-muted">© 2020 Syandsign. All rights reserved.</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </Layout>
   )
 }

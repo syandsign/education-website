@@ -1,0 +1,42 @@
+body .hero {
+  background-color: gray;
+  background-image: url("https://images.unsplash.com/photo-1504275107627-0c2ba7a43dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2534&q=80");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+body .tour {
+  height: 100vh;
+}
+
+body .tour .image {
+  background-image: url("https://images.unsplash.com/photo-1519682337058-a94d519337bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60");
+  background-size: cover;
+  background-position: center;
+}
+
+body .banner {
+  height: 25vh;
+}
+
+body .banner .image {
+  background-image: url("https://images.unsplash.com/photo-1519682337058-a94d519337bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60");
+  background-size: cover;
+  background-position: center;
+}
+
+body .banner2 {
+  height: 40vh;
+}
+
+body .banner2 .image {
+  background-image: url("https://images.unsplash.com/photo-1519682337058-a94d519337bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60");
+  background-size: cover;
+  background-position: center;
+}
+
+body .contact {
+  height: 30vh;
+}
+/*# sourceMappingURL=main.css.map */

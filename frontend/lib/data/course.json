@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Course title",
+    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
+    "mentor": "Mentor name",
+    "excerpt": "Simple course text here",
+    "participants": 2,
+    "time": 2,
+    "price": "FREE"
+  },
+  {
+    "title": "Course title",
+    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
+    "mentor": "Mentor name",
+    "excerpt": "Simple course text here",
+    "participants": 2,
+    "time": 2,
+    "price": "FREE"
+  },
+  {
+    "title": "Course title",
+    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
+    "mentor": "Mentor name",
+    "excerpt": "Simple course text here",
+    "participants": 2,
+    "time": 2,
+    "price": "FREE"
+  }
+]
