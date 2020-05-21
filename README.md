@@ -16,10 +16,10 @@ $ npm run dev
 4. Happy coding!
 
 Oh yea, I'm almost forget. This project is made available using these technologies:
-1. Node.js
-2. Next.js
-3. Bootstrap 4
-4. Iconify
+1. [Node.js](https://nodejs.org/)
+2. [Next.js](https://nextjs.org/)
+3. [Bootstrap 4](https://getbootstrap.com)
+4. [Iconify](https://iconify.design/)
 
 If you had a **problem**, you can contact me here:
 - [Email](mailto:contact.syandana@gmail.com).
