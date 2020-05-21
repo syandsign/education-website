@@ -47,7 +47,7 @@ export default function Home() {
           </div>
           <div className="col-lg align-self-center text">
             <h2 className="font-weight-bold">Take a tour</h2>
-            <p>Lorem ipsum asbfkjagfaksnca</p>
+            <p>Lorem ipsum</p>
           </div>
         </div>
       </div>
@@ -95,7 +95,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <br /><br /><br /><br /><br /><br />
+
       <div className="container-fluid p-lg-5">
         <div className="row h-100">
           <div className="col-lg">
@@ -133,10 +133,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <br />
+
       <div className="container-fluid contact">
-        <div className="row h-100">
-          <div className="col-lg align-self-center p-lg-5">
+        <div className="row h-100 p-lg-5">
+          <div className="col-lg align-self-center">
             <h2 className="font-weight-bold">Contact us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat erat, mattis a pellentesque id, fringilla vitae metus. Proin bibendum sodales congue.</p>
             <ul className="list-unstyled">
@@ -145,7 +145,7 @@ export default function Home() {
               <li>Hours</li>
             </ul>
           </div>
-          <div className="col-lg align-self-center p-lg-5">
+          <div className="col-lg align-self-center">
             <form>
               <div className="form-row">
                 <div className="form-group col-md-6">
@@ -166,7 +166,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
       <div className="container-fluid">
         <div className="row bg-dark p-lg-5 line">
           <div className="col-lg">

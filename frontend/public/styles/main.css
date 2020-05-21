@@ -7,7 +7,7 @@ body .hero {
 }
 
 body .tour {
-  height: 100vh;
+  height: 50vh;
 }
 
 body .tour .image {
@@ -37,6 +37,6 @@ body .banner2 .image {
 }
 
 body .contact {
-  height: 30vh;
+  height: 50vh;
 }
 /*# sourceMappingURL=main.css.map */
