@@ -15,5 +15,11 @@ $ npm run dev
 ```
 4. Happy coding!
 
+Oh yea, I'm almost forget. This project is made available using these technologies:
+1. Node.js
+2. Next.js
+3. Bootstrap 4
+4. Iconify
+
 If you had a **problem**, you can contact me here:
 - [Email](mailto:contact.syandana@gmail.com).
