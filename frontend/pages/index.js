@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout from '../components/layout'
 import course from '../lib/data/course.json'
+import Navbar from '../components/navbar'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <link rel="stylesheet" href="/styles/main.css" />
         <title>Syandsign Academy</title>
       </Head>
+      <Navbar />
       <div className="container-fluid hero">
         <div className="row h-100 text-white">
           <div className="col align-self-center p-5">
@@ -50,7 +52,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container-fluid">
+      <div className="container-fluid course">
         <div className="row h-100 p-5 my-3">
           <div className="col-12">
             <ul className="list-inline">
@@ -68,7 +70,7 @@ export default function Home() {
                   <h5 className="card-title font-weight-bold">{x.title}</h5>
                   <p className="text-muted">{x.mentor}</p>
                   <p className="card-text">{x.excerpt}</p>
-                  <small className="float-left text-muted">{x.participants} Participants&nbsp;&nbsp;&nbsp;{x.time} Hours</small>
+                  <small className="float-left text-muted">{x.students} Students&nbsp;&nbsp;&nbsp;{x.time} Hours</small>
                   <small className="float-right text-danger">{x.price}</small>
                 </div>
               </div>
@@ -81,19 +83,46 @@ export default function Home() {
         <div className="row h-100">
           <div className="col p-5 bg-danger text-white">
             <h2 className="font-weight-bold">E-Books</h2>
-            <p>Lorem ipsum asbfkjagfaksnca</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <a href="#" className="text-white">Learn more</a>
           </div>
           <div className="col p-5 bg-dark text-white">
             <h2 className="font-weight-bold">Creative approach</h2>
-            <p>Lorem ipsum asbfkjagfaksnca</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <a href="#" className="text-white">Learn more</a>
           </div>
           <div className="col image">
           </div>
         </div>
       </div>
-      <br /><br /><br /><br />
+
+      <div className="container-fluid p-5">
+        <div className="row h-100">
+          <div className="col">
+            <h2 className="font-weight-bold">Why choose us?</h2>
+            <p>Many successful years of experience in the education make us leaders in this field</p>
+          </div>
+          <div className="col">
+            <div class="progress">
+              <div class="progress-bar bg-danger w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p>Mentorship</p>
+            <div class="progress">
+              <div class="progress-bar bg-danger w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p>Education</p>
+            <div class="progress">
+              <div class="progress-bar bg-danger w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p>Learning</p>
+            <div class="progress">
+              <div class="progress-bar bg-danger w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p>Motivation</p>
+          </div>
+        </div>
+      </div>
+
       <div className="container-fluid banner2">
         <div className="row h-100">
           <div className="col-4 image">

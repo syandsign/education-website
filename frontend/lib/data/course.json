@@ -1,32 +1,32 @@
 [
   {
     "id": 1,
-    "title": "Course title",
+    "title": "Leadership Skills",
     "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
-    "mentor": "Mentor name",
-    "excerpt": "Simple course text here",
-    "participants": 2,
-    "time": 2,
+    "mentor": "Rizqy Syandana",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "students": 2,
+    "time": 3,
     "price": "FREE"
   },
   {
     "id": 2,
-    "title": "Course title",
-    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
-    "mentor": "Mentor name",
-    "excerpt": "Simple course text here",
-    "participants": 2,
-    "time": 2,
+    "title": "Typography Design",
+    "image": "https://images.unsplash.com/photo-1482160549825-59d1b23cb208?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
+    "mentor": "Rizqy Syandana",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "students": 2,
+    "time": 6,
     "price": "FREE"
   },
   {
     "id": 3,
-    "title": "Course title",
-    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
-    "mentor": "Mentor name",
-    "excerpt": "Simple course text here",
-    "participants": 2,
-    "time": 2,
+    "title": "Learn English",
+    "image": "https://images.unsplash.com/photo-1455540904194-fc101941273a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80",
+    "mentor": "Rizqy Syandana",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "students": 2,
+    "time": 3,
     "price": "FREE"
   }
 ]
